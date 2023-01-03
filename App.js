@@ -5,7 +5,7 @@ const app = express();
 app.listen(3000, () => console.log('listening on port 3000'));
 app.use(express.static('public'));
 let company_name = 'IBM'
-const api_url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${company_name}&apikey=HNTGT5T6X1C9TCS4`
+const api_url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${company_name}&apikey=`
 
 function findMax(data) {
 
